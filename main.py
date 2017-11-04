@@ -62,4 +62,4 @@ if __name__ == '__main__':
 			"example": todayWord.getExamples(),
 			"background": todayWord.getYouKnow(),
 			"podcast": todayWord.getPodCastLink()
-			}, f)
+			}, f, indent=4, ensure_ascii=False)
