@@ -18,16 +18,15 @@ env:
     secure: oGOvOY9E+WTz3/FVyud5OPqHohrHwc+vRczIJm6cc28Y9s7AqHWCg6a9SpgVMPBPTxzFjkJZsAn3ACWMwnsnvi7hE70MZ2oeCk8SOSsAIRBbVzv8MXnZbmONcP8x35YAnKfgyYyW4+F08NUOjwUvgbZqkM+EtrPozvWOxF4xjnYIPrGUI92k0IXhoITbLBA2dMUGqK9XVxA6OeMqVyzOIdeqysaoakELyKf+7yZ+5cy5VKCpKyVcL6BD91A7qjU5h07wRabPqm2C4cozrkhDeVtgUAuVI1AAB4mdvxOtINdSEjP9tuzAqg8Z+YvMiHREU47eTiZ/rCzKyOeMUFN0Ve1eIzTJ33fo0r0Sbgm3KooJ7wxCaLelFixhAsZyNhGh1/EOKXtDqiEt8p/HhL1xUIyp7ImfeANqOAb2er+iSDg8/zNGWRq/2sw1SxAuwzIDIRlN7kbZ4yzynM5z3Bmyuc81y5gA0T2Sm2FJ8KMy+JoODwuhDh0Zrmh5IBx341jkaQEfh9C12t0MD3D9eZgwtvhv87cGXhbOR7vVeSYGTvzrRqXqWGiSxhZ/qZ9LQ+nP2wpJxFDdHe1zMi/irEA8Op+aL/DibEIo2OU17CUYHUeu6HYw9JwEzBGXjbj3gWATi7LoaT5LivJ7+oUCuQEqtfq8HsmnIFgBDkV6KpaNOXU=
 
 before_script:
-  - mkdir Resources
   - git config user.name 'Wolther47'
   - git config user.email 'contact@wolther47.me'
   - git clone "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
+  - cd Word-of-Day
   - git checkout resources
 
 script:
   - python main.py
 
 after_script:
-  - cd Resources
   - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
   - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git" master:resources
