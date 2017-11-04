@@ -12,7 +12,7 @@ install:
 before_script:
 - git config user.name 'Wolther47'
 - git config user.email 'contact@wolther47.me'
-- git clone "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
+- git clone "https://${GITHfUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
 - cd Word-of-Day
 - git checkout resources
 script:
@@ -20,7 +20,7 @@ script:
 after_script:
 - git add .
 - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
-- git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git" master:resources
+- git push "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
 env:
   global:
     secure: iHUyHu9/suDtON9G8o33191FbJeisj+mhg39eU5DcWd38Q1BF/TrhTcmcvgazCRnbT1W34xVq7wL8SpWT5D8wFgrZzyJPSe8b49spDzqGItigjF5rTcf1o01OzurgwPOf9T+mD4Fp3hpUrTtDaFF+Zp0+76xb3OARgtHL3+tElf7kXenWy358qdHcsTMbTi+3Q/wg/eJhLZnrUpVjPF8drTQOaHuHnxfN4lhQsKZGjwwHsJZI0qAJCbkANNi1FQ9Ij0akdlTOlq06dn/YRtJqSA5ATt5CruDLKHtJdnuEuckHCZXFwNYtpxwqMUInmS+LYB/riBxnwR476kP2Tq2/LhFTxOiUueXbj4yNrCcVXbtNcuLjFh1LnrBgiONARJO0qtkFoeeM/NnuVig8nkG2O3bfgeaclgD22IWPLLQ0W5DwE9qrvu5IaJv4NlDQIugzFtg8n7rMkd6eODm//UPCJX3cMFUW/Y4oWyWnTvqaIfUeYGmTfbwYhd7yByM51SHZXKakNBRPBiCjU0LLhc3wDSHC3ogDUeFttA8ahGKi1O3i7DQHW6NjvaFEDEiKt8qRHcSDQ+8yvLNm0RM+bF088FxNsgCwxN+XZwRhuksjgjIePcjKvHH9xZagfkIE1D02tRlImCFghrYlp7Wf0YiL260GHo8HCivPWk2cxHFQj4=
