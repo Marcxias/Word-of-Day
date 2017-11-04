@@ -1,32 +1,26 @@
 language: python
-
 python:
-  - 3.6
-
+- 3.6
 branches:
   only:
-    - master
-    - /^v\d+(\.\d+)+$/
-
+  - master
+  - "/^v\\d+(\\.\\d+)+$/"
 install:
-  - pip install requests
-  - pip install bs4
-  - pip install arrow
-
+- pip install requests
+- pip install bs4
+- pip install arrow
+before_script:
+- git config user.name 'Wolther47'
+- git config user.email 'contact@wolther47.me'
+- git clone "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
+- cd Word-of-Day
+- git checkout resources
+script:
+- python ../main.py
+after_script:
+- git add .
+- git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
+- git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git" master:resources
 env:
   global:
-    secure: oGOvOY9E+WTz3/FVyud5OPqHohrHwc+vRczIJm6cc28Y9s7AqHWCg6a9SpgVMPBPTxzFjkJZsAn3ACWMwnsnvi7hE70MZ2oeCk8SOSsAIRBbVzv8MXnZbmONcP8x35YAnKfgyYyW4+F08NUOjwUvgbZqkM+EtrPozvWOxF4xjnYIPrGUI92k0IXhoITbLBA2dMUGqK9XVxA6OeMqVyzOIdeqysaoakELyKf+7yZ+5cy5VKCpKyVcL6BD91A7qjU5h07wRabPqm2C4cozrkhDeVtgUAuVI1AAB4mdvxOtINdSEjP9tuzAqg8Z+YvMiHREU47eTiZ/rCzKyOeMUFN0Ve1eIzTJ33fo0r0Sbgm3KooJ7wxCaLelFixhAsZyNhGh1/EOKXtDqiEt8p/HhL1xUIyp7ImfeANqOAb2er+iSDg8/zNGWRq/2sw1SxAuwzIDIRlN7kbZ4yzynM5z3Bmyuc81y5gA0T2Sm2FJ8KMy+JoODwuhDh0Zrmh5IBx341jkaQEfh9C12t0MD3D9eZgwtvhv87cGXhbOR7vVeSYGTvzrRqXqWGiSxhZ/qZ9LQ+nP2wpJxFDdHe1zMi/irEA8Op+aL/DibEIo2OU17CUYHUeu6HYw9JwEzBGXjbj3gWATi7LoaT5LivJ7+oUCuQEqtfq8HsmnIFgBDkV6KpaNOXU=
-
-before_script:
-  - git config user.name 'Wolther47'
-  - git config user.email 'contact@wolther47.me'
-  - git clone "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git"
-  - cd Word-of-Day
-  - git checkout resources
-
-script:
-  - python ../main.py
-
-after_script:
-  - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
-  - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git" master:resources
+    secure: iHUyHu9/suDtON9G8o33191FbJeisj+mhg39eU5DcWd38Q1BF/TrhTcmcvgazCRnbT1W34xVq7wL8SpWT5D8wFgrZzyJPSe8b49spDzqGItigjF5rTcf1o01OzurgwPOf9T+mD4Fp3hpUrTtDaFF+Zp0+76xb3OARgtHL3+tElf7kXenWy358qdHcsTMbTi+3Q/wg/eJhLZnrUpVjPF8drTQOaHuHnxfN4lhQsKZGjwwHsJZI0qAJCbkANNi1FQ9Ij0akdlTOlq06dn/YRtJqSA5ATt5CruDLKHtJdnuEuckHCZXFwNYtpxwqMUInmS+LYB/riBxnwR476kP2Tq2/LhFTxOiUueXbj4yNrCcVXbtNcuLjFh1LnrBgiONARJO0qtkFoeeM/NnuVig8nkG2O3bfgeaclgD22IWPLLQ0W5DwE9qrvu5IaJv4NlDQIugzFtg8n7rMkd6eODm//UPCJX3cMFUW/Y4oWyWnTvqaIfUeYGmTfbwYhd7yByM51SHZXKakNBRPBiCjU0LLhc3wDSHC3ogDUeFttA8ahGKi1O3i7DQHW6NjvaFEDEiKt8qRHcSDQ+8yvLNm0RM+bF088FxNsgCwxN+XZwRhuksjgjIePcjKvHH9xZagfkIE1D02tRlImCFghrYlp7Wf0YiL260GHo8HCivPWk2cxHFQj4=
