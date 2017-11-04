@@ -52,9 +52,8 @@ if __name__ == '__main__':
 	todayWord = MWWord()
 	date = arrow.utcnow().to('Asia/Shanghai').format('YYYY-MM-DD')
 
-	os.mkdir('Resources')
 
-	with open(f"Resources/{date}.json", "w") as f:
+	with open(f"{date}.json", "w") as f:
 		json.dump({
 			"word": todayWord.getWord(),
 			"attr": todayWord.getAttribute(),
