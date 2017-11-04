@@ -27,4 +27,4 @@ after_script:
   - git config user.email 'contact@wolther47.me'
   - git add .
   - git commit -m "Fetch on `date +'%Y-%m-%d %H:%M:%S'`"
-  - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Animation.git" master:resources
+  - git push -f "https://${GITHUB_TOKEN}@github.com/wolther47/Word-of-Day.git" master:resources
