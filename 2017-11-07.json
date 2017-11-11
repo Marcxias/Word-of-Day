@@ -1,13 +1,15 @@
 {
-    "word": "Esemplastic",
-    "attr": "adjective",
+    "word": "Archetype",
+    "attr": "noun",
     "definition": [
-        ": shaping or having the power to shape disparate things into a unified whole"
+        "1 : the original pattern or model of which all things of the same type are representations or copies : prototype; also : a perfect example ",
+        "2 : a transcendent entity that is a real pattern of which existing things are imperfect representations : idea ",
+        "3 : (psychology) an inherited idea or mode of thought in the psychology of C. G. Jung that is derived from the experience of the race and is present in the unconscious of the individual"
     ],
     "example": [
-        "\"Art achieves its impact from something Samuel Taylor Coleridge called its esemplastic power, the ability to make sense out of chaos, to 'shape into one' the many truths around us.\" — Teresa Jordan, The Year of Living Virtuously: Weekends Off, 2014 ",
-        "\"The prison walls of self had closed entirely round him; he was walled completely by the esemplastic power of his imagination….\" — Thomas Wolfe, Look Homeward, Angel, 1929"
+        "\"That archetype of the clean-cut, indefatigable and incorruptible agent was largely the invention of J. Edgar Hoover, who led the FBI for 48 years, from May 1924 to May 1972.\" — Vanessa Romo, NPR.org, 13 July 2017",
+        "\"In Nashville, … [Shania] Twain has come to be embraced as an elder and an archetype. Carrie Underwood had to prove that she could handle one of Twain's hits when she competed on American Idol en route to becoming one of the reigning pop-country figures of the post-Shania era.\" — Jewly Hight, Vulture, 29 Sept. 2017"
     ],
-    "background": "\"Unusual and new-coined words are, doubtless, an evil; but vagueness, confusion, and imperfect conveyance of our thoughts, are a far greater,\" wrote English poet Samuel Taylor Coleridge in Biographia Literaria, 1817. True to form, in that same work, he assembled esemplastic by melding the Greek phrase es hen, meaning \"into one,\" with plastic to fulfill his need for a word that accurately described the imagination's ability to shape disparate experiences into a unified whole (e.g., the poet's imaginative ability to communicate a variety of images, sensations, emotions, and experiences in the unifying framework of a poem). The verb intensify was another word that Coleridge was compelled to mint while writing Biographia.",
-    "podcast": "https://rss.art19.com/episodes/1f79c35d-da18-4446-a393-93e75024b2ee.mp3"
+    "background": "Archetype derives via Latin from the Greek adjective archetypos (\"archetypal\"), formed from the verb archein (\"to begin\" or \"to rule\") and the noun typos (\"type\"). (Archein also gave us the prefix arch-, meaning \"principal\" or \"extreme,\" used to form such words as archenemy, archduke, and archconservative.) Archetype has specific uses in the fields of philosophy and psychology. The ancient Greek philosopher Plato, for example, believed that all things have ideal forms (aka archetypes) of which real things are merely shadows or copies. And in the psychology of C. G. Jung, archetype refers to an inherited idea or mode of thought that is present in the unconscious of the individual. In everyday prose, however, archetype is most commonly used to mean \"a perfect example of something.\"",
+    "podcast": "https://rss.art19.com/episodes/e333a9e2-857e-47b1-9581-bc5f46ca75ba.mp3"
 }
